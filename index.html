@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="all">
+
+	<div class="loading-screen position-fixed justify-content-center align-items-center">
+		<i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+	</div>
+      <div class="content">
+        <div class="content-info">
+          <ul>
+            <li><a href="#Search"  onclick="Searchpage()">Search</a></li>
+            <li><a href="#Category" onclick="CategoryPage()">Category</a></li>
+            <li><a href="#area" onclick="AreaPage()">Area</a></li>
+            <li><a href="#Ingredients" onclick="IngredientsPage()">Ingredients</a></li>
+            <li><a href="#CONTACTS" onclick="ContactsPage()">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="content-cap-foot">
+          <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-dribbble"></i>
+          </div>
+          <p>Contact Us Copyright Â© 2022 All Rights Reserved by <span style="color:red">Abdallah</span>.</p>
+        </div>
+      </div>
+
+      <div class="bar-container">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" srcset="" />
+        </div>
+        <div class="open-close">
+          <i id="theme-open" class="fas fa-bars"></i>
+          <i id="theme-close" class="fas fa-times"></i>
+        </div>
+        <div class="foot">
+          <i class="fa-brands fa-dribbble"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    
+
+<section class="home" id="home">
+
+
+
+
+
+        <div class="container">
+            <div class="row gy-4" id="home-meals">
+
+          
+
+            </div>
+
+
+        </div>
+
+</section>
+<section class="category" id="category">
+
+    <div class="container">
+        <div class="row gy-3" id="catContainer">
+            <div class="col-lg-3">
+                <div class="cat-container">
+                                     <div class="box">
+                                    <img src="./images/58oia61564916529.jpg" alt="">
+                                    <div class="content">
+                                        <h3>food</h3>
+
+                                    </div>
+                                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="meal " id="meal">
+ 
+    </section>
+
+    <section class="area" id="area">
+        <div class="container">
+            <div class="row" id="area-container">
+                <div class="col-lg-3">
+                    <div class="area-container">
+                       <i class="fa-solid fa-city"></i>
+                       <h3>chinese</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="gradient" class="gradient">
+        <div class="container">
+            <div class="row" id="meal-ingradient">
+                <div class="col-lg-3">
+                    <div class="gradient-container">
+                    <i class="fa-solid fa-utensils"></i>
+                        <h3>Salmon</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim tempore exercitationem dolor expedita commodi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+
+        <div class="container">
+            <div class="row justify-content-between">
+                <h2>Contact Us....</h2>
+                <div class="col-lg-6 ">
+              <div class="inputbox">
+                  <input type="text" name="" placeholder="Enter Your Name" id="contact_name" class="form-control">
+                  <span class="help-block">Something may have gone wrong</span>
+              </div>
+             <div class="inputbox">
+                  <input type="text" name=""  placeholder="Enter Your Phone" id="contact_phone" class="form-control">
+                  <span class="help-block">Something may have gone wrong</span>
+              </div>
+                <div class="inputbox">
+                    <input type="password" name=""  placeholder="Enter Your Password" id="contact_password" class="form-control">
+                    <span class="help-block">Something may have gone wrong</span>
+                </div>
+                </div>
+                <div class="col-lg-6">
+              <div class="inputbox">
+                  <input type="email" name="" placeholder="Enter Your Email" id="contact_email" class="form-control">
+                  <span class="help-block">Something may have gone wrong</span>
+                
+              </div>
+            <div class="inputbox">
+                  <input type="text" name=""  placeholder="Enter Your Age" id="contact_age" class="form-control">
+                  <span class="help-block">Something may have gone wrong</span>
+                </div>
+                <div class="inputbox">
+                  <input type="password" name=""  placeholder="Enter Re-password" id="contact_repassword" class="form-control">
+                  <span class="help-block">Something may have gone wrong</span>
+            
+              </div>
+                </div>
+<div class="input text-center" id="abdallah">
+ <input type="submit" value="Submit" class="btn btn-danger" id="submit" disabled>
+</div>
+             
+            </div>
+
+        </div>
+    </section>
+<section class="search" id="search">
+
+    <div class="container">
+        <div class="row gy-3">
+            <div class="col">
+               <div class="inputbox">
+                  <input type="search" name=""  placeholder="Search By Name" id="searchName">
+              </div>
+            </div>
+           <div class="col">
+             <div class="inputbox">
+                  <input type="search" name=""  placeholder="Search By First-Letter" id="searchFirstLetter" onkeyup="validate(this);">
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="img-container">
+            
+            <div class="row gy-4" id="search-container">
+
+            </div>
+    </div>
+</section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/main.js" ></script>
+  </body>
+</html>
