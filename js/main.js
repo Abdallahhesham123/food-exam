@@ -263,52 +263,7 @@ async function showspacificmeal(data) {
     }
   }
 
-  // let tagsDom = "";
-  // for (let i = 1; i <= 20; i++) {
-  //   if (data[0][`strMeasure${i}`]) {
-  //     tagsDom += ` <div class="tag">${data[0][`strMeasure${i}`]}</div>`;
-  //   }
-  // }
 
-  /*
-  
-  
-  
-  
-  
-  
-  
-  
-    console.log(data[0].strTags);
-
-  if (data[0].strTags == null) {
-    let tagsDom = "";
-    for (let i = 1; i <= 20; i++) {
-      if (data[0][`strMeasure${i}`]) {
-        tagsDom += ` <div class="tag">${data[0][`strMeasure${i}`]}</div>`;
-      }
-
-    }
-    console.log(tagsDom);
-  } else {
-    let tags = data[0].strTags.split(",");
-    let tagsDom = "";
-    for (let i = 0; i < tags.length; i++) {
-      tagsDom += `<div class="tag">${tags[i]}</div>`;
-    }
-     console.log(tagsDom);
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  */
    let tagsDom = "";
   if (data[0].strTags === null) {
    
